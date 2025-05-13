@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from "next/link";
 
 export default function MovieCard({ movie }) {
   const [imageError, setImageError] = useState(false);
@@ -9,6 +10,8 @@ export default function MovieCard({ movie }) {
 
   return (
     <div className="w-[90px] text-center">
+      <Link href={`/peliculas/${movie._id}`}>
+      
       {movie.poster && !imageError ? (
         <img 
           src={movie.poster} 
@@ -22,6 +25,8 @@ export default function MovieCard({ movie }) {
         </div>
       )}
       <p className="text-xs mt-1 truncate">{movie.title}</p>
+      <p>{movie.year}</p>
+      </Link>
     </div>
   );
 }

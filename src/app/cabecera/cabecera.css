@@ -1,0 +1,20 @@
+.cabecera {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+}
+
+.cabecera__logo img{
+    height: 40px;
+}
+
+.cabecera__nav Link{
+    margin:  0 12px;
+    text-decoration: none;
+    color: #3333;
+    font-weight: 500;
+}

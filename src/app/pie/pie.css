@@ -1,0 +1,21 @@
+.pie {
+    width: 100%;
+    padding: 16px 24px;
+    background-color: aliceblue;
+    border-radius: 1px solid #261d1d;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    box-sizing: border-box;
+}
+
+.pie__info {
+    margin-bottom: 8px;
+}
+
+.pie__nav a {
+    margin: 0 10px;
+    color: rgb(24, 37, 37);
+    text-decoration: none;
+}
+
